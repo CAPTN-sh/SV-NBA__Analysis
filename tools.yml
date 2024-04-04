@@ -1,0 +1,84 @@
+# # --------------
+# # ##> CONDA
+# # --------------
+# ##> WAY 1:
+# # conda env create --name captn-nba --file tools.yml
+# ## Make sure you have the .toml dependencies created
+# # poetry install
+# # poetry update
+# # poetry lock
+
+# ##> WAY 2:
+# # conda <create -n/activate> captnnba
+# # conda config --env --set channel_priority strict
+# # conda env update --file tools.yml
+# ## Make sure you have the .toml dependencies created
+# # poetry install
+# # poetry update
+# # poetry lock
+
+# # --------------
+# ##> MAMBA
+# # --------------
+# ##> WAY 1:
+# # cond env create  --name captn-nba --file tools.yml
+# ## Make sure you have the .toml dependencies created
+# # poetry install
+# # poetry update
+# # poetry lock
+
+# ##> WAY 2:
+# # mamba <create -n/activate> captn_nba
+# # conda config --env --set channel_priority strict
+# # mamba env update --file tools.yml
+# ## Make sure you have the .toml dependencies created
+# # poetry install
+# # poetry update
+# # poetry lock
+
+# # -------------------------------------
+# # ##> Reference: Conda + PyPi + Poetry
+# # -------------------------------------
+# # https://bit.ly/3N3k82T
+# # https://bit.ly/42apttz
+# # 
+
+name: captn-nba
+
+channels:
+    - pytorch
+    - conda-forge
+    # - defaults
+    # - esri # for arcgis
+    # - pyviz
+
+    # We want to have a reproducible setup, so we don't want default channels,
+    # which may be different for different users. All required channels should
+    # be listed explicitly here.
+    - nodefaults
+
+dependencies:
+    - python>=3.12 #>=3.9, <3.12 
+    - pip
+    - mamba
+    - conda-lock
+
+    # Maps
+    # - arcgis
+    - geoviews
+
+    # Similarity measures
+    - dtaidistance
+
+    # Plotting
+    - selenium
+    - firefox 
+    - geckodriver
+
+
+    - pip:
+        - poetry >=1.8.1
+        - shap >=0.44.1
+
+
+

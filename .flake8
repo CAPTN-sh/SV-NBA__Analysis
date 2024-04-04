@@ -1,0 +1,17 @@
+# .flake8
+
+[flake8]
+max-line-length = 120
+extend-ignore = E203
+ignore = E221,E225,E265,E226,E302,E305,E402,E701,F841,F401,W291,W293
+    # W293: Warning - Blank line contains whitespaces
+    # E221: Mutliple Spaces before Operator
+    # E225: Missing white space before operator
+    # E265: Block comment should start with '# '
+    # E266: Missing space before arithmetic
+    # E402: Module level import not at top of file
+    # F841: Local variable is assigned to but never used
+    # F401: Module imported but unused
+    # E302: Expected 2 blank lines, found 0
+    # E305: Expected 2 blank lines after class or function definition, found 1
+    # E701: Multiple statements on one line (colon)
