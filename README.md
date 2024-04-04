@@ -8,7 +8,7 @@ the Surface Vessel Nautical Behaviour Analysis (SV-NBA) framework for
 in-depth spatio-temporal analysis of maritime surface vessels’ behaviour
 in Kiel Fjord. 
 
-![Behaviour Definition](images_and_description/behaviour_definition.png)
+![Behaviour Definition](images_and_description/behaviour_definition_w.png)
 
 ## Requirements
 To install all the requirements, one needs to first install:
