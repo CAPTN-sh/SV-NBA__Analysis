@@ -25,7 +25,7 @@ The proper installation must then be done with poetry and conda.
 ## Datasets
 The collected data comprises of AIS signals received in a monitoring period from 24.03.22 to 30.06.2023. Of those days there were 296 for which all outgoing AIS messages in the Kiel Fjord region were recorded.
 
-**The data used in the experiment has a time resolution of 10 seconds, while the data in the `data/assets` are sample data (only validate data due to file size) obtained through downsampling, with a resolution of 1 minute.**
+**The data used in the experiment has a time resolution of 10 seconds, while the data in the `data/assets` are sample data obtained through downsampling, with a resolution of 10 minute.**
 
 ## Contributing
 ![DAE Framework](images_and_description/DAE_framework_new.png)
